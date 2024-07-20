@@ -109,11 +109,12 @@ export type CheckoutOrderParams = {
   eventId: string;
   price: string;
   isFree: boolean;
+  currency: string;
   buyerId: string;
 };
 
 export type CreateOrderParams = {
-  stripeId: string;
+  razorpayId: string;
   eventId: string;
   buyerId: string;
   totalAmount: string;
